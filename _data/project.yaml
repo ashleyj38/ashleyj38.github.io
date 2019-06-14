@@ -1,0 +1,77 @@
+skills:
+
+  - name: Interaction Design
+    tag: interactionDesign
+    projects:
+      - title: Fun &amp; Games ... &amp; Learning?
+        description: When developing serious games, you quickly learn that providing a game that users enjoy requires a great amount of attention to detail. At the launch of this project, I took the lead in developing the interaction flow and working prototypes for gameplay.
+        image: /img/ix-flow-card.png
+        url: /portfolio/serious-game-design
+
+      - title: Saving Pay-Day
+        description: Explore the challenges, feats, and successes of updating and enhancing an in-flight application to incorporate better user experience and style.
+        image: /img/blotter-new-card.png
+        url: /portfolio/trade-verification
+
+      - title: Order Form Design
+        description: As an independent project, I designed an order form for an up & coming mobile delivery service.
+        image: /img/form-design-card.png
+        url: /portfolio/form-design
+
+  - name: Content Auditing
+    tag: contentAuditing
+    projects:
+      - title: Complex Content Audit
+        description: We were called in to help this company reach more potential buyers, and we delivered above and beyond! Take a peak into the steps we took to provide this company with valuable insights and next steps for improving their marketing strategy.
+        image: /img/slide4.png
+        url: /portfolio/content-Audit
+
+      - title: Mortgage Information
+        description: TBD
+        image: /img/wf-content-audit-card.png
+        url: /portfolio/content-Audit
+
+  - name: Wireframes &amp; Prototypes
+    tag: prototyping
+    projects:
+      - title: Fun &amp; Games ... &amp; Learning?
+        description: When developing serious games, you quickly learn that providing a game that users enjoy requires a great amount of attention to detail. At the launch of this project, I took the lead in developing the interaction flow and working prototypes for gameplay.
+        image: /img/IX-Flow-Full.png
+        url: /portfolio/serious-game-design
+
+      - title: Saving Pay-Day
+        description: Explore the challenges, feats, and successes of updating and enhancing an in-flight application to incorporate better user experience and style.
+        image: /img/blotter-new.png
+        url: /portfolio/trade-verification
+
+      - title: Mobile Design
+        description: A small independent study of creating a branded appointment scheduling application for a local small business.
+        image: /img/browzilla-ix-flow.png
+        url: /portfolio/mobile-app-design
+
+  - name: Persona Work
+    tag: personas
+    projects:
+      - title: Sales Personas
+        description: We were called in to help this company reach more potential buyers, and we delivered above and beyond! Take a peak into the steps we took to provide this company with valuable insights and next steps for improving their marketing strategy.
+        image: /img/slide4.png
+        url: /portfolio/content-Audit
+
+
+  - name: Illustrations &amp; Graphic Design
+    tag: graphicDesign
+    projects:
+      - title: A Little Art Goes a Long Way
+        description: View commissioned drawings created for a large financial institution application using their branding guidelines.
+        image: /img/bac-illustration-card.png
+        url: /portfolio/branding-and-illustration
+
+      - title: Logo Work &amp; Graphic Design
+        description: Enjoy a collection of commissioned logos created for small businesses and entities. Enter the mind of Ashley Jones the Artist by viewing this collection of personal works for absolutely no purpose.
+        image: /img/sits-card.png
+        url: /portfolio/personal-work
+
+      - title: An Introduction to Animation
+        description: A look at my latest expansive study into the art of animation, both big and small.
+        image: /img/davita-card.png
+        url: /portfolio/animations

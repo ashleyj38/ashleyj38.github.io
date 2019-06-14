@@ -1,0 +1,176 @@
+items:
+
+  - title: Menu Restructure
+    modal: menuRestructure
+    description: Arguably the most important piece of an application is clear navigation, and this application initially had some major navigation issues. Not only were menu options long and non-descript, but there were so many that it took well above the threshold for users to find the page they were looking for. My first feat was to improve the navigational strcutre by re-categorizing and organizing pages in a way that was more easily navigable and allowed for proper responsiveness of the site.
+    image: /img/menu-prototype.gif
+    steps:
+      - index: 1
+        name: Original Menu
+        image: /img/menu-old.png
+        description: When this project first began, many archaic methods were used to initially build the menu. And as the project continued, the menu quickly became inundated and incomprehensible. This eventually led to issues with responsiveness and testing of the application. I took a systematic approach to addressing this as one of our first UX improvements of the application.
+
+      - index: 2
+        name: Menu Mapping
+        image: /img/menu-mapping.gif
+        description: My first step in creating the new menu structure was to understand the different types of users accessing the application and what menu items they had access to. This was largely controlled by the application logic, so I took up the tedious task of mapping each user role to the menu items they had access to, which resulted in the beautiful excel document above.
+
+      - index: 3
+        name: Building the Top-level
+        image: /img/menu-new.png
+        description: Once I had a clear understanding of the roles and the pages they were able to access, I took a stab at the top-level menu items. First, I included the menu items that all roles had access to and that would be "quick hits" for the user, such as the Dashboard and My Profile pages. Ledger was also moved to the top-level as a "quick hit" item because it was a page of great interest to the users of this app, where they would be able to view their own personal trades or that of their direct reports. Next, I took some time to look at the remaining items and group them in a logical way.
+
+      - index: 4
+        name: Re-categorizing Menu Items
+        image: /img/menu-mapping.gif
+        description: Before regrouping any of the remaining menu items, I first renamed them to be clearer. By getting rid of ambiguous words and phrases, it was much easier to move things around. Most menu items stayed within their same category, but a few items were suggested to be moved under new headers.
+
+      - index: 5
+        name: Categorizing Sub-menus
+        image: /img/menu-mapping.gif
+        description: There were a couple of menu groupings that were still long and needed to be more easily navigable. There were two fixes implemented for this. For the admin menu, we created a sub-submenu structure for the many groupings of administrative pages that needed to be managed. With the renaming of these groupings and pages, the administrative page could now be more quickly perused. The second fix was dividing the Commissions submenu into sections. By doing this, the most important pages were listed at the top, while search time for other related pages was split in half by dividing them into two easy-to-understand categories.
+
+      - index: 6
+        name: Proposed Menu Structure
+        image: /img/menu-mapping.gif
+        description: The final result was a much shorter menu where quick actions were moved to the front and search time for pages was greatly reduced by providing unambiguous headers and page titles.
+
+  - title: Compliance Page
+    modal: compliancePage
+    description: After addressing navigation, I turned my attention to the most complex screen of the entire application - a page where administrators had to review and approve trades daily. Because of the vast amounts of data this page had to import and process, there were numerous filters available to apply. By collecting feedback from the users and the development team, I was able to present them with the cleanest solution to manage this page.
+    image: /img/blotter-new.png
+    steps:
+      - index: 1
+        name: Original Screen
+        image: /img/blotter-new.png
+        description: The trade blotter, one of the most important pages of this application, had become a mutant monster over the course of this project. Tasked with loading in hundreds of thousands of records each day, not only were there performance issues that needed to be addressed, but issues with viewing the data as well. Several filters of different types had been concatenated onto this page over time, cramming the space and causing extra time to *digest the data being presented. And items that originally had been put in place to better inform the reading of this page, like the legend, were being abused and taking up unnecessary space as well.
+
+      - index: 2
+        name: Addressing Performance
+        image: /img/blotter-date-filter.png
+        description: The greatest hit to performance was specifying the amount of data being pulled in with the date filter. Initially, the date filter would begin searching the databases as soon as a user would click into the field. This would often cause crashes if an end date was not yet picked or if a user picked a date range that was too long. The fix for this was to add an action button to the date filters that only ran the database query after two new dates were picked. We wrapped these controls in a bounded rectangle so that it was clear they were all related to each other and named the action of the button so that its purpose was clear.
+
+      - index: 3
+        name: Filtering Data
+        image: /img/filtering-blotter.gif
+        description: Initially, there were two dropdown filters, five checkbox filters, and more filters being added every day for this screen. What made things even more complex is that some filters could not be applied to the data at the same time and would automatically be removed or "unchecked" if it conflicted with a new filter being applied. A new tag filter system was suggested, so that the user would always know what filters were being applied to the data at any time and would be easily removable if needed. This also normalized the way to apply filters to the grid, so that it was the same every time.
+
+      - index: 4
+        name: Legend
+        image: /img/blotter-legend.png
+        description: The legend was another part of this page that morphed over time. Through conversations with the BA's on this project and discussion with the rest of the UX team, we were able to reduce the legend from five items to three. In addition, we made the objective decision to remove the words attached to these legend items and instead add hover tags and relate them to the filters and other actions of the page in color and symbolism. This would help to clarify what actions related to which legend item and increased the amount of available space on the page by allowing us to include the legend in the table header.
+
+      - index: 5
+        name: Moving Functionality
+        image: /img/mark-as-reviewed.png
+        description: In the original screen, there were two major action buttons located on the page. We first moved the action buttons into the table header so that there was stronger association between the actions and the table data. The "Approve" button was renamed to be more understandable and given symbolism and color to correlate to its legend item. After testing the functionality of the page, we also found that the "Mark as Reviewed" button did not make sense in the table header - it could only be applied to one line item at a time. Instead, we moved this action down into the peek view of the table on the appropriate tab, where Review Items were viewed and managed already.
+
+      - index: 6
+        name: Adding a New View
+        image: /img/blotter-view.gif
+        description: In addition to giving this page a facelift, the business partners brought up the need to be able to view all unapproved trades, regardless of date. To address this, we created a toggleable view for the screen that allowed one to view unapproved trades. On this page, we removed the ability to include trades that are approved (removing this also from the legend) so as not to negatively impact the performance of this page view.
+
+  - title: Application Administration Approach (AAA)
+    modal: administration
+    description: Because this was a complex application, there was a lot of smaller administrative pieces that drove the functionality. Originally, the design of these pages was discounted by the developers, as 'only a system administrator would see them'. But we argued that admins are users too, and we should craft an experience that helps them complete their job more efficiently. Here is an example of an improved pattern we created for some of the administrative screens.
+    image: /img/jobProcess-prototype.gif
+    steps:
+      - index: 1
+        name: Original Job Runner Screen
+        image: /img/style-guide.png
+        description: The original screen was made up of a series of tiles with each of the available jobs listed. There were no explanations of each and no convention for finding which job you wanted to run. You would just have to read through the titles of each tile and guess as to what needed to be done.
+
+      - index: 2
+        name: One Job at a Time
+        image: /img/job-panel.png
+        description: The first issue I noticed when viewing this screen is that, because you see all jobs at once, you have to take additional time to search for the specific job that you want to run. In our approach, we gave this screen a "category list" and a view pane that only showed one job at a time, so that you could focus more intently and be clearer about the action you are taking.
+
+      - index: 3
+        name: Categorizing Jobs
+        image: /img/job-category-panel.png
+        description: For the existing jobs on the screen, I noticed that there were different categories for each job. Some were related to the same line of business while others were more deeply connected in the order that they needed to be run. I organized the jobs into three categories - the two lines of business (fixed income and equity) and commissions.
+
+      - index: 4
+        name: Proposed Job Runner Screen
+        image: /img/jobRunner-new.png
+        description: The end result of this screen was a reusable pattern of categorizing and encapsulating* different administrative tasks. In addition to the fields that were already there, I added brief descriptions for each job to clarify for the user that they are performing the correct action as well as warning messages for jobs that required other jobs to be run as a prerequisite.
+
+  - title: Processing Payroll
+    modal: processPayroll
+    description: To the individuals receiving their commissions paychecks based on this application, this was by far the most important screen! After several meetings with the administrators who processed payroll for this company, we were able to come up with a sleek and easy-to-follow screen for this process, with a repeatable pattern for other complex procedures.
+    image: /img/payroll.png
+    steps:
+      - index: 1
+        name: Background
+        image: /img/payroll.png
+        description: Running and managing payroll became the next big undertaking of the project after creating the blotters. As a new addition to the application, I was able to infuse greater UX at the beginning, which was a wonderful experience. We conducted many interviews with the individuals who conducted payroll to get a deep understanding of the process and used this to inform our design.
+
+      - index: 2
+        name: Tracking Payroll Status
+        image: /img/payroll-steps.png
+        description: From our conversations, the payroll process involves several different people and several different steps. The first decision we made was to include a "tracker" for the individual that kicks off and manages the payroll process. This widget we would use in later designs for this application to ensure that the current state of a process is always clear.
+
+      - index: 3
+        name: View by Role
+        image: /img/payroll.png
+        description: As stated before, there were several different people involved in this process. The result was to create role-specific views of this page data. While the controller of this process saw a payroll status, the remaining individuals saw the data they had access to and the specific action buttons that they needed to complete their piece.
+
+      - index: 4
+        name: The Right Action at the Right Time
+        image: /img/payroll.png
+        description: With this screen, we also introduced another new pattern - showing the right action at the right time. There was only ever one primary action available on the screen for these individuals and it was based on the status of payroll for that pay period. In situations where there was no action to be taken by the individual viewing the screen - whether they were waiting or payroll was finalized - relevant information was put in the action button's place.
+
+      - index: 5
+        name: Sending Reminders
+        image: /img/payroll-reminders.png
+        description: Such relevant information was the ability to check approval and send reminders from the controller's side. At the point that the controller hands off the commissions data to be reviewed and approved by the necessary parties, he or she is able to view real-time what individuals have completed their part and which individuals may need a little nudge.
+
+      - index: 6
+        name: Audit Logs
+        image: /img/payroll-audit-log.png
+        description: Once the payroll process is completed, the controller and other individuals involved have the ability to view an audit log of the payroll process. The end users were very happy about this addition and told us so in our review!
+
+      - index: 7
+        name: Final Product
+        image: /img/payroll.png
+        description: Here is a depiction of the final payroll process. I hope you enjoy!
+
+  - title: Commission Setup
+    modal: commissionSetup
+    description: A large part of calculating commissions properly in the system was setting up the percentages that each trader would get for each deal. For an administrative process - that in most cases only happens once at the beginning of each year - the interface for managing these components needed to be easy to read and manipulate.
+    image: /img/sales-trader-payout-schedule.png
+    steps:
+      - index: 1
+        name: Original Process
+        image: /img/sales-trader-payout-schedule.png
+        description: Behind payroll and commissions, there was a lot of administration required for the complex calculations the system needed to be able to handle. When the system was initially built, based on the discussions with the business, this resulted in several different screens being created where administrators had to navigate and set up percentages and thresholds needed for commissions calculations. All of these values were closely intertwined, but on separate administrative screens.
+
+      - index: 2
+        name: Eliminating Screens
+        image: /img/sales-trader-payout-schedule.png
+        description: Our first goal with redesigning this process was to eliminate as many screens as we could. Through conversation about the commissions calculation itself, it quickly became evident that calculations for sales people and traders was different. While sales people had an overall payout percentage, traders' payout percentage was based on what tier they were in. In other words, if a trader met a certain threshold throughout the year, their payout was bumped up in turn. Based on this information, we created two screens - one for sales people and one for sales traders.
+
+      - index: 3
+        name: Payout Schedules
+        image: /img/sales-trader-payout-schedule.png
+        description: Because both sales people and sales traders needed a payout schedule, we created this part of the screen first. Payout percentages were based on the types of trades conducted for both sales people and traders, but these categories were different. Also, there needed to be the ability to add incentive schedules for certain individuals in special cases. We created a grid system for inputting this data so that values were easy to read and understand by category and schedule type. See the differences for sales person and trader above.
+
+      - index: 4
+        name: Tier Schedules
+        image: /img/sales-trader-payout-schedule.png
+        description: In addition to payout percentage by trade type and schedule type, this value also needed to be categorized by tier threshold. This page was designed so that users could easily view the tier ranges and only update the upper threshold for the first two tiers as to not accidentally exclude any price ranges.
+
+      - index: 5
+        name: Viewing Schedule History
+        image: /img/sales-trader-payout-schedule.png
+        description: TBD
+
+      - index: 6
+        name: Adding Functionality
+        image: /img/sales-trader-payout-schedule.png
+        description: In addition to restructuring these pages, the business partners introduced us to some new complexity within the commissions-calculation. There are some teams within the company in which individual commissions are aggregated to determine their tier, which then determines payout schedule. To address this, we created two more tabs on the trader payout schedule page that addresses these special teams, with the same structure as for individual trader payout schedules.
+
+      - index: 7
+        name: Final Product
+        image: /img/sales-trader-payout-schedule.png
+        description: The resulting payout schedule admin pages are represented above.

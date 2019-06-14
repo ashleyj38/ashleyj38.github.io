@@ -1,0 +1,89 @@
+---
+layout: default
+title: Trade Verification
+permalink: /portfolio/content-audit
+ks_id: kba
+---
+
+<div class="container">
+  <div class="container-fluid">
+    <div class="row mt-3">
+      <div class="col">
+        <a href="/portfolio">Back to Projects List</a>
+      </div>
+    </div>
+    <h2 class="text-center my-3">Website Content Audit</h2>
+    <div class="row">
+      <div class="col">
+        <p class="lead">Our UX team completed an extensive content audit and marketing strategy for a large tech company. As a part of the project, I spearheaded research, content mapping / categorization, and persona creation. I was also deeply involved in the decision-making for our final proposal.</p>
+      </div>
+    </div>
+
+    {% for step in site.data.gridgain.steps %}
+    <div class="row py-3 border-bottom">
+      <div class="col-md-6">
+        <img class="img-fluid folio-image" src="{{ step.image }}" alt="">
+      </div>
+      <div class="col-md-6 pt-3 pt-md-0">
+        <h6 class="text-center">{{ step.title }}</h6>
+        <p class="lead">{{ step.description }}</p>
+        {% if step.steps %}
+        <a data-toggle="modal" data-target="#{{ step.modal }}Modal" href="#">Learn More</a>
+        {% endif %}
+      </div>
+    </div>
+
+    <!--Modal-->
+    {% if step.steps %}
+    <div class="modal fade" id="{{ step.modal}}Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">{{ step.title }}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!--Carousel-->
+            <div id="{{ step.modal }}Indicators" class="carousel slide" data-interval="false" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#{{ step.modal }}Indicators" data-slide-to="0" class="active"></li>
+                <li data-target="#{{ step.modal }}Indicators" data-slide-to="1"></li>
+                <li data-target="#{{ step.modal }}Indicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                {% for step in step.steps %}
+                {% if step.index == 1 %}
+                <div class="carousel-item active">
+                  <h6 class="text-center">{{ step.name }}</h6>
+                  <img class="d-block w-100" src="{{ step.image }}" alt="Slide {{ step.index }}">
+                  <p class="lead mt-3">{{step.description}}</p>
+                </div>
+                {% else %}
+                <div class="carousel-item">
+                  <h6 class="text-center">{{ step.name }}</h6>
+                  <img class="d-block w-100" src="{{ step.image }}" alt="Slide {{ step.index }}">
+                  <p class="lead mt-3">{{ step.description }}</p>
+                </div>
+                {% endif %}
+                {% endfor %}
+              </div>
+              <a class="carousel-control-prev" href="#{{ step.modal }}Indicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#{{ step.modal }}Indicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

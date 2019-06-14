@@ -1,0 +1,114 @@
+// sdaas
+// ------------
+//section: Hero
+
+#sdaas-hero {
+    background: url(/img/origami-butterfly.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    background-color: #4b4b4b;
+}
+#sdaas-hero.jumbotron {
+    min-height: 80vw;
+    padding-top: 2rem;
+    @include media-breakpoint-up(lg) {
+        min-height: 50vw;
+        padding-top: 2rem;
+    }
+}
+
+//section: what is sdaas
+#section-sdaas {
+
+    .card-sdaas {
+        border: 2px solid #ccc;
+        border-radius: 9px;
+        background: linear-gradient(226.2deg, rgba(255,255,255,0.15) 0%, #F5F8FB 100%);
+        box-shadow: 0 1px 3px 3px rgba(0,0,0,0.25);
+
+        i.fa-glasses {
+            color: $ks-red;
+        }
+        i.fa-box-usd {
+            color: $ks-red;
+        }
+        i.fa-people-carry {
+            color: $ks-red;
+        }
+        i.fa-route {
+            color: $ks-red;
+        }
+        i.fa-puzzle-piece {
+            color: $ks-red;
+        }
+        i.fa-alarm-clock {
+            color: $ks-red;
+        }
+
+    }
+    h5.card-title {
+        line-height: 0.9;
+        min-height: 2rem;
+    }
+
+}
+// section: how does sdaas work?
+@include media-breakpoint-up(md) {
+    .animation-caption {
+        font-size: 1.5rem;
+    }
+}
+// section: platform features & benefits
+#section-platform-benefits {
+
+    background: url(/img/sdaas-hero.png) no-repeat center top;
+    background-size: cover;
+
+    background-color: #4a4a4a;
+    h2, h3, h6, .lead {
+        color: #fff;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    h5.card-title {
+        font-family: "IBM Plex Sans";
+        text-transform: none;
+    }
+    .card-text {
+        //font-size: 1rem;
+    }
+    div.card-feature {
+        margin: 10px 0 10px 0;
+        background-color: rgba(122, 154, 191,.9);
+        h5, .card-text {
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.75);
+        }
+    }
+    div.card-benefit {
+        margin: 10px 0 10px 0;
+        background-color: rgba(133, 46, 45,.9);
+        color: #ccc;
+        h5, .card-text {
+            color: #FFF;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+    }
+}
+#carouselMessages {
+    min-height: 40vw;
+    background: url(/img/texture-boxes.png) no-repeat center center;
+    background-size: cover;
+}
+
+// responsive adjustments
+@include media-breakpoint-up(md) {
+    .features-side-border {
+        padding-right: 1.5rem;
+        border-right:1px solid #dee2e6;
+    }
+    .benefits-side-padding {
+        padding-left: 1.5rem;
+    }
+}

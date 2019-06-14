@@ -1,0 +1,38 @@
+// kba
+// ------------
+//section: Hero
+#kba-hero {
+    background: url(/img/Optimized-purple-bkgd-2.jpg) no-repeat bottom right fixed;
+    background-size: cover;
+    background-color: #4b4b4b;
+    min-height: 30vw;
+    padding-top: 10rem;
+
+    @include media-breakpoint-up(md) {
+        .jumbotron {
+            min-height: 60vw;
+            padding-top: 10rem;
+        }
+    }
+}
+
+#graphic-design-hero {
+    background: url(/img/Optimized-3d-clouds.jpg) no-repeat bottom right fixed;
+    background-size: cover;
+    background-color: #4b4b4b;
+    min-height: 30vw;
+    padding-top: 10rem;
+
+    @include media-breakpoint-up(md) {
+        .jumbotron {
+            min-height: 60vw;
+            padding-top: 10rem;
+        }
+    }
+}
+
+#portfolio-section {
+  h3 {
+    color: $ks-white;
+  }
+}

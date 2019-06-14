@@ -1,0 +1,22 @@
+graphics:
+
+  - name: My First Animation
+    url: /img/davita-animation.gif
+
+  - name: Crown'd Jewlz
+    url: /img/crownd_jewlz.jpg
+
+  - name: Hand of God
+    url: /img/hand_of_God.jpg
+
+  - name: Medusa's Eye
+    url: /img/MedusasEye.jpg
+
+  - name: Heart &amp; Hand
+    url: /img/heart-hand.png
+
+  - name: Standing in the Sunroom
+    url: /img/sits-logo-1080.png
+
+  - name: The Wavy Bunch
+    url: /img/theWavyBunch.jpg

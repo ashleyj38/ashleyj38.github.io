@@ -1,0 +1,41 @@
+screens:
+
+  - title: Style Guide
+    description: Style Guide
+    image: /img/style-guide.png
+
+  - title: Home Screen
+    description: Home Screen
+    image: /img/home.png
+
+  - title: Login Screen
+    description: Login Screen
+    image: /img/login.png
+
+  - title: Profile Screen
+    description: Profile Screen
+    image: /img/profile.png
+
+  - title: Calendar
+    description: Calendar
+    image: /img/calendar.png
+
+  - title: Cancellation Policy
+    description: Cancellation Confirmation message
+    image: /img/cancellation.png
+
+  - title: Sign Up Process
+    description: Step 1
+    image: /img/signup-1.png
+
+  - title: Sign Up Process
+    description: Step 2
+    image: /img/signup-2.png
+
+  - title: Sign Up Process
+    description: Step 3
+    image: /img/signup-3.png
+
+  - title: Payment Screen
+    description: Payment Screen
+    image: /img/payment.png

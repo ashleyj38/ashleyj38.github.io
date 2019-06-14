@@ -1,0 +1,71 @@
+---
+---
+//variables
+$font-family-sans-serif: "IBM Plex Sans","Helvetica Neue", Arial, sans-serif;
+$body-bg: #e6e6e6;
+$grid-gutter-width:  20px;
+
+$lead-font-size: 1.25;
+
+//colors
+$ks-white:      rgb(255, 255, 255);
+$ks-eggshell:   rgb(246, 243, 238);
+$ks-black:      rgb(35, 31, 32);
+$ks-grey:       rgb(167, 168, 169);
+$ks-red:        rgb(188, 47, 44);
+$ks-hot-red:    rgb(129,129,248);
+$ks-dull-red:   rgb(133, 46, 45);
+$ks-blue:       rgb(122, 154, 191);
+$ks-dark-blue:  rgb(49, 97, 151);
+$ks-light-blue: rgb(204, 217, 232);
+
+// nav
+$navbar-dark-color:                 rgba($ks-black, .85);
+$navbar-dark-hover-color:           rgba($ks-black, .85);
+$navbar-dark-active-color:          $ks-black;
+$navbar-dark-disabled-color:        rgba($ks-white, .25);
+$navbar-dark-toggler-border-color:  rgba($ks-white, .1);
+
+$navbar-light-color:                rgba($ks-black, .75);
+$navbar-light-hover-color:          rgba($ks-black, .7);
+$navbar-light-active-color:         rgba($ks-black, .9);
+$navbar-light-disabled-color:       rgba($ks-black, .3);
+$navbar-light-toggler-border-color: rgba($ks-black, .1);
+
+.navbar {
+  opacity: 0.8;
+}
+
+//cards
+$card-border-radius: 10px;
+
+//pre-declare $spacers and add values as needed
+$spacers: ();
+$spacers: map-merge(
+    (
+        6: 4.5rem,
+        7: 6rem,
+        8: 12rem,
+        9: 24rem
+        ),
+        $spacers
+);
+//@debug $spacers;
+
+//imports
+@import 'bootstrap/bootstrap';
+
+//global
+@import 'custom/_all.scss';
+
+//fonts
+@import 'webfonts/font-awesome.css';
+@import 'webfonts/cedra-4fwide.css';
+
+// page level
+@import 'custom/_home.scss';
+@import 'custom/_sdaas.scss';
+@import 'custom/_portfolio.scss';
+@import 'custom/_justforfun.scss';
+@import 'custom/_about.scss';
+@import 'custom/_contact.scss';

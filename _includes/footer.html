@@ -1,0 +1,77 @@
+<!-- footer -->
+
+<footer>
+    <div class="container py-4">
+        <div class="row py-3 border-bottom">
+            <div class="col-md"><img class="footer-logo pb-3" src="/img/personal-logo_white.png" alt="Kingsmen Logo K"></div>
+            <div class="col-md offset-md-3">
+                <p class="footer-headline">Contact Me</p>
+                    <p><a href="tel:1-301-356-3135">+1 301-356-3135</a><br>
+                    <a href="mailto:ashley.m.jones14@gmail.com">ashley.m.jones14@gmail.com</a></p>
+            </div>
+            <div class="col-md-3">
+                <p class="footer-headline">Follow Me</p>
+                <a href="https://www.linkedin.com/in/ashley-jones-6a03216a/" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-2x mr-2 text-center"></i></a>
+                <a href="https://www.instagram.com/heartinhandgraphics/" target="_blank" rel="noopener"><i class="fab fa-instagram fa-2x text-center"></i></a>
+            </div>
+        </div>
+        <div class="row py-4">
+            <div class="col-md-5 ks-f-nav text-md-left">
+                <ul class="">
+                    {% for item in site.data.navigation.nav-items %}
+                    <li>
+                        <a class="px-2" href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JS -->
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/ks.js"></script>
+<!--Attempt to smooth scroll-->
+<script type="text/javascript">
+  $('body').scrollspy({target: "#intro", offset: -50})
+
+  $("#intro a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+
+        window.location.hash = hash;
+      });
+    }
+  });
+</script>
+{% if page.has_video %}
+
+{% endif %}
+{% if page.ks_id == 'sdaas' %}
+<script>
+    {% include pages/sdaas.js %}
+</script>
+{% endif %}
+<!-- <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-82197225-1', 'auto');
+        ga('send', 'pageview');
+</script> -->

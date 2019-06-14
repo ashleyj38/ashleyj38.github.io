@@ -1,0 +1,103 @@
+steps:
+
+  - title: Website Content Audit
+    description: Before collecting user data, I did a thorough analysis of the existing company website, supplied with a full site map. With a deep understanding of existing content, I was able to easily point out major flaws in their approach, especially after researching similar companies.
+    image: /img/site-hierarchy-cropped.png
+
+  - title: User Interviews &amp; Persona Work
+    modal: personas
+    description: At the beginning of this project, several phone interviews were conducted. Interviewees consisted of existing &amp; potential customers as well as staff in leadership, sales, and marketing. Analysis of the data gathered from these interactions was processed and used to identify five key persona types to address. I was tasked with crafting these final personas.
+    image: /img/slide4.png
+    steps:
+      - index: 1
+        name: Overview
+        image: /img/slide4.png
+        description: Out of our interviews and research, we narrowed down client interaction to five personas that would affect sales and growth for the company, and essentially dictate our decisions for strategy moving forward.
+
+      - index: 2
+        name: The CTO
+        image: /img/Slide1.png
+        description: The first persona that the website had to address was the Enterprise CTO. As a technical leader within his company, it is his or her job to make objective decisions around technology that will help meet business goals and propel the organization forward while minimizing risk. We spoke to two different enterprise CTO's about the product and about their concerns when investigating a new technical solution. The results were the goals, obstacles and questions above.
+
+      - index: 3
+        name: The LOB Owner
+        image: /img/Slide2.png
+        description: The line of business owner was the second company leader that we investigated. In this position, he or she is also interested in propelling the organization as a whole or line of business forward, whether that be through technology or other initiatives. Not necessarily technical in background, this industry leader is looking for hard facts and proven results of business improvement and growth when approached about new technical solutions. We made sure that this was included in our later recommendations based on this persona breakdown.
+
+      - index: 4
+        name: Systems Architect
+        image: /img/Slide3.png
+        description: The Systems Architect is the brains of this operation &mdash; he or she holds the power because they have the deepest knowledge of the current enterprise system and what the cost, risk, and benefit would be to introduce a new technology or product. The systems architect is often called in by the CTO or LOB owner to assess new technology or vice versa - the systems architect will present a recommendation to his or her leaders. As this is a role that requires great knowledge and skill, it was important to include specs within the site regarding technical requirements, integration capabilities, and support.
+
+      - index: 5
+        name: The Current Customer
+        image: /img/Slide5.png
+        description: Though we've already made the sale with this individual, it was clearly important to make support easily available for current customers. Current customers give validity to a new or emerging technology and are our feet on the ground for promoting products. We were able to interview a few current customers of the product and from that create a persona that spoke to their greatest wants and needs in the product website.
+
+      - index: 6
+        name: The Enterprise Developer
+        image: /img/Slide6.png
+        description: Last but certainly not least is the Enterprise Developer. Another highly technical role, this persona was the most likely to interact with the open source version of the product and spread interest. When we first assessed the site, it seemed to be geared only to the developers, which we did not think was the correct action. But we also did not want to leave them out, as a strong voice for the product. Creating this persona kept this group of users in perspective when we made our final recommendations.
+
+  - title: Content Mapping
+    description: Equipped with the audit of the current site content and detailed key personas, we were able to map existing and necessary content and calls-to-action for each identity. This team exercise informed the rest of our decisions for this project.
+    image: /img/content-mapping.png
+
+  - title: Taking Personas Further
+    description: Based on the desired calls to action for the company, we charted the five existing personas against the three primary factors of the product's sale &mdash; technical acumen, business acumen, and decision-making authority. This furthered later decisions around site recommendations.
+    image: /img/personas-category-chart.png
+
+  - title: Critical Conversations
+    description: From the previous exercises, we realized that to get to the point of sale for this company usually took several steps, many iterations, and many conversations. From these personas, we derived plausible critical conversations amongst the persona types that would take an individual from potential to current customer.
+    image: /img/critical-conversation.png
+
+  - title: Proposed Navigational Structure
+    modal: mainNav
+    description: With a thorough understanding of the personas, their interactions and their individual and collective goals and knowledge, we were able to deliver a proposed primary and secondary menu structure that would not only draw decision-makers in, but be much easier to navigate while still addressing site SEO. We were able to successfully re-categorize existing information to this new navigation.
+    image: /img/desktop-navigation.png
+    steps:
+      - index: 1
+        name: Desktop Navigation
+        image: /img/desktop-navigation.png
+        description: When coming up with the proposed design and navigational structure for this company, we took into consideration the information we had gathered from our user analysis, research about competitors, and theories derived from our content mapping exercises to fuel our decisions. The result was a clean and simple approach to addressing the decision-makers and including the middle-men imperative to creating sales for the company.
+
+      - index: 2
+        name: Products &amp; Services
+        image: /img/primary-navigation-1.png
+        description: TBD
+
+      - index: 3
+        name: Why Our Product?
+        image: /img/primary-navigation-2.png
+        description: One issue that consistently came up in our interviews was that, as a little-known brand, it was important to develop repour with potential customers as a part of the engagement process. Addressing the question up front allowed for us to do just that and would be a quick hit, especially for our business leaders.
+
+      - index: 4
+        name: Developers
+        image: /img/primary-navigation-3.png
+        description: As before-mentioned, developers were a large percentage of the audience being captured, and we wanted that to continue. Though these were not usually the clients we wanted to attract and bring to point of sale, they were the influencers that we needed in those decisions. By giving them a dedicated space, they could learn more about the enterprise solution or simply redirect to more apropos content on the open source website.
+
+      - index: 5
+        name: Contact Us &amp; Get Started
+        image: /img/primary-navigation-4.png
+        description: Arguably the most important part of the website was the call to action. In the initial content audit, I noted several issues with the CTA's and contact methods. Contacting the company took several different steps and was somewhat hidden within the navigation. There were also several distracting CTA's on each page. We decided to make the global call-to-action "Get Started" to prompt interested visitors after reading pertinent content. And a *regular contact page is always an necessity!
+
+
+  - title: Page-Level Navigation
+    modal: pageLevelNav
+    description: To account for a wealth of deeply technical information on the site, we developed an approach to include page-level navigation to guide potential customers to the information most important to them.
+    image: /img/page-level-navigation-2.png
+    steps:
+      - index: 1
+        name: Overview
+        image: /img/page-level-navigation-2.png
+        description: In our findings, we wanted to make sure to address both technical concerns and business concerns for this product. The question being asked by all of our personas was "How will this product help me?". Initially content was extremely dense and hard to understand for users that were not familiar with the topic. Without diluting this content, we came up with a page-level navigation strategy that addressed the technical aspects of the system in a clear way while still speaking to the business benefits of the product.
+
+      - index: 2
+        name: For Business
+        image: /img/page-level-navigation-3.png
+        description: After a general overview of the page content, we decided to include a section entitled "For Business" as we wanted to get more decision-makers and business-leaders to engage with the website. By speaking directly to this group, it would be easy for them to find information that was initially hidden or clouded in jargon.
+
+      - index: 3
+        name: For Tech
+        image: /img/page-level-navigation-4.png
+        description: The third section of page-level navigation was entitled "For Tech". This section included carefully categorized topics that addressed the questions that users really wanted to know based on our research. It included information pertinent to decision-making while redirecting deeper technical inquiries to an external documentation site. This allowed would allow the site content to be more focused on marketing while still driving interested visitors to the answers they sought.

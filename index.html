@@ -1,10 +1,185 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <p>Hello, World</p>
-  </body>
-</html>
+---
+layout: default
+title: Ashley Jones | UX Designer
+permalink: /
+ks_id: home
+---
+
+<!-- SECTION: hero -->
+<div id="home-hero" class="jumbotron jumbotron-fluid d-flex align-items-center">
+    <div class="container">
+        <h1 class="hero text-center">Ashley<br>Jones</h1>
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-10">
+                    <p class="lead hero my-5">UX Designer & Graphic Artist</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SECTION: Bio -->
+<div class="container-fluid border-bottom text-center">
+  <div  id="bio" class="row no-gutters d-flex justify-content-center my-4">
+      <div class="col-md-6 d-flex p-2">
+          <div class="card card-sdaas py-4 px-3 flex-fill">
+              <div class="card-body">
+                  <h5 class="card-title text-center">A Little About Me...</h5>
+                  <p class="card-text lead">I am a budding UX designer, abstract artist, and vegan brunch enthusiast. With a heavy background in Computer Science and a lifelong love for visual and performance art, I found my niche when I found UX design. Since leaping into this career, I have enjoyed having my hands in all phases of the design process &mdash; from user research to wireframing &amp; prototyping to creating high-fidelity visualizations.</p>
+                  <a class="my-3 py-2 px-4 btn btn-primary ks-cta-button" href="./AshleyJones_Resume_01_2017.docx" download>Download Resume</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="skills" class="container-fluid border-bottom text-center">
+    <div class="row no-gutters my-4">
+        <div class="col-md-12 mt-6">
+            <h3>Professional Skills</h3>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col text-right">
+        <h6>Axure</h6>
+      </div>
+      <div class="col text-left">
+        <svg width="300" height="30">
+          <rect width="300" height="20" style="fill:rgb(124,85,255)"/>
+        </svg>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-right">
+        <h6>Illustrator</h6>
+      </div>
+      <div class="col text-left">
+        <svg width="300" height="30">
+          <rect width="300" height="20" style="fill:rgb(124,85,255)"/>
+        </svg>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-right">
+        <h6>PhotoShop</h6>
+      </div>
+      <div class="col text-left">
+        <svg width="300" height="30">
+          <rect width="300" height="20" style="fill:rgb(124,85,255)"/>
+        </svg>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-right">
+        <h6>HTML/CSS</h6>
+      </div>
+      <div class="col text-left">
+        <svg width="300" height="30">
+          <rect width="300" height="20" style="fill:rgb(124,85,255)"/>
+        </svg>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-right">
+        <h6>JavaScript</h6>
+      </div>
+      <div class="col text-left">
+        <svg width="300" height="30">
+          <rect width="300" height="20" style="fill:rgb(124,85,255)"/>
+        </svg>
+      </div>
+    </div>
+
+
+</div>
+
+<!--Portfolio Intro Section-->
+<div id="portfolio-section" class="container-fluid border-bottom text-center">
+    <div class="row no-gutters my-4">
+        <div class="col-md-12 mt-6">
+            <h3>Portfolio Highlights</h3>
+            <h5>See more <a href="/portfolio/">here</a></h5>
+        </div>
+    </div>
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-fluid" src="/img/davita-animation.gif" alt="">
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="/img/davita-animation.gif" alt="">
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="/img/davita-animation.gif" alt="">
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!--Contact Section-->
+<div id="contact" class="container-fluid py-5">
+  <div id="contact-form" class="container">
+      <div class="row">
+          <div class="col-md-10 lead">
+              I'd love to hear from you!
+          </div>
+      </div>
+      <form action="https://formspree.io/ashley.m.jones14@gmail.com" method="POST">
+          <div class="row no-gutter">
+              <div class="col-md-6">
+                  <div class="row">
+                      <div class="col">
+                          <h3>Send a message</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <input class="contact-field w-100 m-2" type="text" placeholder="First Name" name="firstName"
+                              required>
+                          <input class="contact-field w-100 m-2" type="text" placeholder="Last Name" name="lastName"
+                              required>
+                      </div>
+                      <div class="col-md-6">
+                          <input class="contact-field w-100 m-2" type="text" placeholder="Company" name="company">
+                          <input class="contact-field w-100 m-2" type="email" placeholder="Email" name="email" required>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                          <textarea class="contact-field w-100 m-2" id="MessageRequest" rows="5" placeholder="Message" name="message"
+                              required></textarea>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                          <input class="contact-field m-2" type="text" name="_gotcha" style="display:none" />
+                          <input class="contact-field m-2" type="hidden" name="_next" value="/thanks" />
+                          <button type="submit" value="Send" class="btn btn-primary ks-cta-button">Send</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-5 offset-md-1">
+                  <div class="row">
+                      <div class="col"><h3>Other methods</h3></div>
+                  </div>
+                  <ul>
+                      <li>
+                          <i class="fal fa-envelope" aria-hidden="true"></i>
+                          <a href="mailto:ashley.m.jones14@gmail.com">ashley.m.jones14@gmail.com</a>
+                      </li>
+                      <li>
+                          <i class="fal fa-phone" aria-hidden="true"></i>
+                          <a href="tel:7049972755">301-356-3135</a>
+                      </li>
+                      <li>
+                          <i class="fab fa-linkedin" aria-hidden="true"></i>
+                          <a href="https://www.linkedin.com/in/ashley-jones-6a03216a/" target="_blank" rel="noopener">Ashley on Linkedin</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </form>
+  </div>
+</div>

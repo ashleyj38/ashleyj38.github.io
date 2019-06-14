@@ -1,0 +1,35 @@
+---
+layout: default
+title: Trade Verification
+permalink: /portfolio/mobile-app-design
+ks_id: kba
+---
+
+<div class="container">
+  <div class="container-fluid">
+    <div class="row mt-3">
+      <div class="col">
+        <a href="/portfolio">Back to Projects List</a>
+      </div>
+    </div>
+    <h2 class="text-center my-3">Mobile Booking App</h2>
+    <div class="row">
+      <div class="col">
+        <p class="lead">Sparked by a local business-owner, I created the branding, layout, &amp; interaction flow for a scheduling application that would allow her and her clients to manage and view appointments. The goal and outcome was a sleek, simple interface where the most important information is right at your fingertips.</p>
+      </div>
+    </div>
+    {% for screen in site.data.browzilla.screens %}
+    <div class="row py-3 border-bottom">
+      <div class="col-md-6">
+        <img class="img-fluid folio-image" src="{{ screen.image }}" alt="">
+      </div>
+      <div class="col-md-6 pt-3 pt-md-0">
+        <h6 class="text-center">{{ screen.title }}</h6>
+        <p class="lead">{{ screen.description }}</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>

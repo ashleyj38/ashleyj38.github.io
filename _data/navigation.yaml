@@ -1,0 +1,19 @@
+nav-items:
+
+# - title: Software Development
+#   url: \#
+
+- title: About Me
+  url: /#bio
+
+- title: Portfolio
+  url: /portfolio/
+
+# - title: Services
+#   url: /services/
+
+# - title: About
+#   url: /about/
+
+- title: Graphic Design
+  url: /graphic-design/

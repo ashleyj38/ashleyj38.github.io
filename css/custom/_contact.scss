@@ -1,0 +1,17 @@
+// contact
+// ------------
+//section: Hero
+#contact-hero {
+    background: url(/img/purple-flowers.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    background-color: #4b4b4b;
+    min-height: 30vw;
+    padding-top: 10rem;
+
+    @include media-breakpoint-up(md) {
+        .jumbotron {
+            min-height: 60vw;
+            padding-top: 10rem;
+        }
+    }
+}

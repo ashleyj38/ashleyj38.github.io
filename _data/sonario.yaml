@@ -1,0 +1,24 @@
+items:
+
+  - title: Interaction Flow Diagram
+    description: Several iterations of game interaction were drafted and discussed following the user from the menu screen to each game module.
+    image: /img/workflow_final.png
+
+  - title: Prototyping
+    description: A minimal prototype was created in Notable to show the winning and losing scenario of a game module. The prototype also showed interaction with the game panel statistics and menu options.
+    image: /img/IX-Flow.png
+    steps:
+      - index: 1
+        name: Prototype
+        image: /img/sonario-prototype.png
+        description: Prototype
+
+      - index: 2
+        name: Winning Scenario
+        image: /img/sonario-prototype-winning.mp4
+        description: Winning Scenario
+
+      - index: 3
+        name: Losing Scenario
+        image: /img/sonario-prototype-losing.mp4
+        description: Losing Scenario

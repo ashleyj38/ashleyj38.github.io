@@ -1,0 +1,25 @@
+// home
+#home-hero {
+    background: url(/img/Optimized-paint-block.png) no-repeat center center;
+    background-size: contain;
+    background-color: #e6e6e6;
+    min-height: 30vw;
+    padding-top: 10rem;
+}
+
+#portfolio-section {
+  background-color: #40408f;
+}
+
+@include media-breakpoint-up(md) {
+    .jumbotron {
+        min-height: 60vw;
+        padding-top: 10rem;
+    }
+}
+
+#skills {
+  background: url(/img/purple-chair-radial-mask.jpg) no-repeat left center;
+  background-size: auto 100%;
+  min-height: 500px;
+}
