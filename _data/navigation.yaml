@@ -7,7 +7,7 @@ nav-items:
   url: /#bio
 
 - title: Portfolio
-  url: /portfolio/
+  url: /portfolio
 
 # - title: Services
 #   url: /services/
@@ -16,4 +16,4 @@ nav-items:
 #   url: /about/
 
 - title: Graphic Design
-  url: /graphic-design/
+  url: /graphic-design
