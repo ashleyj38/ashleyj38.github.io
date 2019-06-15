@@ -20,19 +20,21 @@ redirect_from: /graphic-design/
 </div>
 
 <div class="container">
-  <div class="row mt-3">
+  <!-- <div class="row mt-3"> -->
+  <div class="card-columns">
     {% for graphic in site.data.graphics.graphics %}
-    <div class="col-md-4 my-2">
-      <div class="position-relative w-100">
-        <img class="img-thumbnail gallery-image w-100" src="{{ graphic.url }}" alt="{{ graphic.name }}">
+    <!-- <div class="col-md-4 my-2"> -->
+      <!-- <div class="position-relative w-100"> -->
+      <div class="card">
+        <!-- <img class="img-thumbnail gallery-image w-100" src="{{ graphic.url }}" alt="{{ graphic.name }}"> -->
+        <img class="card-img-top" src="{{ graphic.url }}" alt="{{ graphic.name }}">
         <div class="image-overlay h-100 w-100 d-flex align-items-center px-3">
           <h6 class="text-center w-100">{{ graphic.name }}</h6>
         </div>
       </div>
-
-    </div>
     {% endfor %}
+    </div>
 
-  </div>
+  <!-- </div> -->
 
 </div>
