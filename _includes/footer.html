@@ -6,7 +6,7 @@
             <div class="col-md"><img class="footer-logo pb-3" src="/img/personal-logo_white.png" alt="Kingsmen Logo K"></div>
             <div class="col-md offset-md-3">
                 <p class="footer-headline">Contact Me</p>
-                    <p><a href="tel:1-301-356-3135">+1 301-356-3135</a><br>
+                    <!-- <p><a href="tel:1-301-356-3135">+1 301-356-3135</a><br> -->
                     <a href="mailto:ashley.m.jones14@gmail.com">ashley.m.jones14@gmail.com</a></p>
             </div>
             <div class="col-md-3">
@@ -42,7 +42,7 @@ crossorigin="anonymous"></script>
 <script src="/js/ks.js"></script>
 <!--Attempt to smooth scroll-->
 <script type="text/javascript">
-  $('body').scrollspy({target: "#intro", offset: -50})
+  $('body').scrollspy({target: "#intro", offset: 150})
 
   $("#intro a").on('click', function(event) {
     if (this.hash !== "") {
@@ -51,10 +51,11 @@ crossorigin="anonymous"></script>
       var hash = this.hash;
 
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top - 150
       }, 1000, function(){
 
-        window.location.hash = hash;
+        window.location.hash = hash - 150;
+
       });
     }
   });
