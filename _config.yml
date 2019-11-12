@@ -10,7 +10,6 @@ title: Ashley Jones | UX Portolio
 email: ashley.m.jones14@gmail.com
 description: Portfolio of Ashley Jones
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://kingsmensoftware.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
