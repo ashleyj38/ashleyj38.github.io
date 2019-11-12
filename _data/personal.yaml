@@ -1,0 +1,37 @@
+projects:
+
+  - name: Standing in the Sun Room
+    image: /img/sits-logo-1080.png
+    desc: Social Media logo for @standinginthesunroom
+
+  - name: Yazzy Bees
+    image: /img/yazzy-bees.png
+    desc: Personal logo for @yazzybees social media account
+
+  - name: The Wavy Bunch
+    image: /img/theWavyBunch.jpg
+    desc: Personal project done for a group of friends. Themed after "The Brady Bunch"
+
+  - name: Colorful Doodles
+    image: /img/personal/calendar1.jpg
+    desc: One of my favorite pasttimes is doodling. I created a series of doodles that I then enhanced and colored digitally.
+
+  - name: Pyramid Playing Cards
+    image: /img/personal/diamonds-07.png
+    desc: As a personal challenge, I created a set of playing cards. I was so impressed with the end result, that I had them printed and even sold a few! Order your deck <strong><a target="_blank" href="https://www.printerstudio.com/sell/designs/pyramid-playing-cards-shrink-wrapped.html">here.</a></strong>
+
+  - name: Graphic Face
+    image: /img/personal/graphic_face.jpg
+    desc: Semi-abstract depiction of a woman's face.
+
+  - name: Floral Fro
+    image: /img/personal/floral-fro.jpg
+    desc: Sketch turned digital artwork.
+
+  - name: JT Logo
+    image: /img/personal/jt-final.png
+    desc: Personal logo developed for a friend.
+
+  - name: We are Sparta!
+    image: /img/personal/spartan-logo-2.png
+    desc: Logo created for Spartan Marketing.

@@ -1,0 +1,51 @@
+items:
+
+  - title: Metrics
+    modal: metrics
+    description: One of the first things you see in the application are real-time metrics. We gave these a facelift as the face of the app.
+    image: /img/loan-boss/expand-metrics.gif
+
+  - title: Preferences
+    modal: preferences
+    description: Customization was extremely important for the stakeholders of this application to appeal to a customer base. One of our first tasks as designers was coming up with an approach to make setting preferences easy and straightforward for several different pieces of the application.
+    image: /img/loan-boss/preferences-page.png
+    steps:
+      - index: 1
+        name: Top 6 Metrics
+        image: /img/loan-boss/set-metrics-preferences.gif
+        description: On several of the application's pages, there are quick metrics to reference placed at the top of the page. By default, 6 of 18+ metrics are displayed. Giving the user ability to choose which metrics they wanted to see was our first design task.
+
+      - index: 2
+        name: Column Preferences
+        image: /img/loan-boss/reorder-column-preferences.gif
+        description: In addition to metrics, users are also able to choose their column preferences. To control order of columns, we used a drag-and-drop approach to make this quick and easy.
+
+  - title: Making Educated Decisions
+    modal: compareAndCombine
+    description: Enabling the user to make informed decisions was a major goal of this application. By designing an easy-to-follow workflow to compare and combine quotes, we accomplished that goal.
+    image: /img/loan-boss/quote-combine-page.png
+    steps:
+      - index: 1
+        name: Guiding the Experience
+        image: /img/loan-boss/combine-modal-step1.png
+        description:
+
+  - title: Managing Funds
+    modal: managingFunds
+    description: As this application was created for companies managing large portfolios, it was designed to make information easily accessible and flipping back and forth between data simple.
+    image: /img/loan-boss/funds-page.png
+    steps:
+      - index: 1
+        name: Tabular Actions
+        image: /img/loan-boss/fund-tab-actions.gif
+        description:
+
+      - index: 2
+        name: Tabular Actions
+        image: /img/loan-boss/funds-actions.gif
+        description:
+
+  - title: Take Notes
+    modal: takeNotes
+    description: Applicable pages were equipped with easily accessible buttons to add and read notes and attachments.
+    image: /img/loan-boss/notes-and-attachments.gif

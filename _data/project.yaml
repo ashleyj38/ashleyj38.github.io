@@ -3,6 +3,11 @@ skills:
   - name: Interaction Design
     tag: interactionDesign
     projects:
+      - title: Mortgage Management
+        description: In the big leagues of mortgage management, you need big tools. As the lead UX designer on this project, I took pride into developing this application from start to finish.
+        image: /img/loan-boss-card.png
+        url: /portfolio/mortgage-management
+
       - title: Fun &amp; Games ... &amp; Learning?
         description: When developing serious games, you quickly learn that providing a game that users enjoy requires a great amount of attention to detail. At the launch of this project, I took the lead in developing the interaction flow and working prototypes for gameplay.
         image: /img/ix-flow-card.png
@@ -24,16 +29,21 @@ skills:
       - title: Complex Content Audit
         description: We were called in to help this company reach more potential buyers, and we delivered above and beyond! Take a peak into the steps we took to provide this company with valuable insights and next steps for improving their marketing strategy.
         image: /img/slide4.png
-        url: /portfolio/content-Audit
+        url: /portfolio/content-audit
 
-      - title: Mortgage Information
-        description: TBD
+      - title: Mortgage Hunting
+        description: An extensive content audit was performed for this entity in their housing mortgage division. We sifted through their entire site and gave suggestions for ommissions, rewording, and style changes for these pages.
         image: /img/wf-content-audit-card.png
-        url: /portfolio/content-Audit
+        url: /portfolio/mortgage-hunting
 
   - name: Wireframes &amp; Prototypes
     tag: prototyping
     projects:
+      - title: Mortgage Management
+        description: In the big leagues of mortgage management, you need big tools. As the lead UX designer on this project, I took pride in developing this application from start to finish.
+        image: /img/loan-boss-card.png
+        url: /portfolio/mortgage-management
+
       - title: Fun &amp; Games ... &amp; Learning?
         description: When developing serious games, you quickly learn that providing a game that users enjoy requires a great amount of attention to detail. At the launch of this project, I took the lead in developing the interaction flow and working prototypes for gameplay.
         image: /img/IX-Flow-Full.png

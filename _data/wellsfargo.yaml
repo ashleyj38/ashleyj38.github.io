@@ -1,0 +1,35 @@
+steps:
+
+  - title: Simple Marketing
+    description: An important part of this project was creating simple messages to capture the visitor's attention. With clear, concise language, we were able to convey value as an intelligent marketing tactic.
+    image: /img/wells-fargo/artifact_3.png
+
+  - title: Personalize It
+    modal: personalization
+    description: By connecting with the user on a personal level, marketing messages are even more useful. We suggested using current mortgage holder information to promote further services with this company.
+    image: /img/wells-fargo/artifact_2.png
+
+  - title: Making the Connection
+    modal: connection
+    description: To promote action by the user, we introduced a personable approach to contacting the company by including a profile image of the agent in your area and additional contact methods. Here are a few iterations of this approach.
+    image: /img/wells-fargo/artifact_8.png
+    steps:
+      - index: 1
+        name: Version 1
+        image: /img/wells-fargo/artifact_5.png
+        description:
+
+      - index: 2
+        name: Version 2
+        image: /img/wells-fargo/artifact_6.png
+        description:
+
+      - index: 3
+        name: Version 3
+        image: /img/wells-fargo/artifact_7.png
+        description:
+
+      - index: 4
+        name: Final Version
+        image: /img/wells-fargo/artifact_8.png
+        description:
