@@ -1,0 +1,91 @@
+---
+layout: default
+title: Mortgage Management
+permalink: /portfolio/mortgage-management
+ks_id: kba
+---
+
+<div class="container">
+  <div class="container-fluid">
+    <div class="row mt-3">
+      <div class="col">
+        <a href="/portfolio">Back to Projects List</a>
+      </div>
+    </div>
+    <h2 class="text-center my-3">Enterprise Mortgage Management</h2>
+    <div class="row">
+      <div class="col">
+        <p class="lead">It was a joy being the lead UX designer on this project, with such interesting design problems and a supportive team. We were able to join the project right at the beginning and immediately begin providing value.</p>
+      </div>
+    </div>
+
+    {% for item in site.data.pensford.items %}
+
+    <div class="row py-3 border-bottom">
+      <div class="col-md-6">
+        <img class="img-fluid folio-image" src="{{ item.image }}" alt="">
+      </div>
+      <div class="col-md-6 pt-3 pt-md-0">
+        <h6 class="text-center">{{ item.title }}</h6>
+        <p class="lead">{{ item.description }}</p>
+        {% if item.steps %}
+        <a href="#" data-toggle="modal" data-target="#{{ item.modal }}Modal">Learn More</a>
+        {% endif %}
+      </div>
+    </div>
+
+    <!--Modal-->
+      {% if item.steps %}
+      <div class="modal fade" id="{{ item.modal }}Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">{{ item.title }}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!--Carousel-->
+              <div id="{{ item.modal }}Indicators" class="carousel slide" data-interval="false" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  {% for step in item.steps %}
+                  {% if step.index == 1 %}
+                  <div class="carousel-item active">
+                    <h6 class="text-center">{{ step.name }}</h6>
+                    <img class="d-block w-100" src="{{ step.image }}" alt="Slide {{ step.index }}">
+                    <p class="lead mt-3">{{ step.description }}</p>
+                  </div>
+                  {% else %}
+                  <div class="carousel-item">
+                    <h6 class="text-center">{{ step.name }}</h6>
+                    <img class="d-block w-100" src="{{ step.image }}" alt="Slide {{ step.index }}">
+                    <p class="lead mt-3">{{ step.description }}</p>
+                  </div>
+                  {% endif %}
+                  {% endfor %}
+                </div>
+                <a class="carousel-control-prev" href="#{{ item.modal }}Indicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#{{ item.modal }}Indicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+  </div>
+
+</div>
