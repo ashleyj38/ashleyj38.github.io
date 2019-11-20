@@ -16,16 +16,22 @@ ks_id: kba
       <h2 class="text-center">Logos &amp; Personal Artwork</h2>
     </div>
   </div>
-  <div class="row">
-    {% for image in site.data.bac.images %}
-    <div class="col-md-4 my-2">
-      <div class="position-relative w-100">
-        <img class="img-thumbnail gallery-image w-100" src="{{ image.url }}" alt="{{ image.desc }}">
-        <div class="image-overlay h-100 w-100 d-flex align-items-center px-3">
-          <h6 class="text-center w-100">{{ image.desc }}</h6>
-        </div>
-      </div>
 
+  <div class="row my-4">
+    {% for project in site.data.personal.projects %}
+    <div class="col-md-4">
+      <div class="position-relative w-100">
+        <img class="img-thumbnail gallery-image w-100" src="{{ project.image }}" alt="{{ project.name }}">
+        <!-- <div class="image-overlay h-100 w-100 d-flex align-items-center px-3">
+          <h6 class="text-center w-100">{{ project.name }}</h6>
+          <br>
+          <p>{{ project.desc }}</p>
+        </div> -->
+      </div>
+      <div>
+        <h6 class="text-center w-100">{{ project.name }}</h6>
+        <p>{{ project.desc }}</p>
+      </div>
     </div>
     {% endfor %}
 

@@ -29,6 +29,8 @@ items:
         name: Guiding the Experience
         image: /img/loan-boss/combine-modal-step1.png
         description:
+      - index: 2
+        name:
 
   - title: Managing Funds
     modal: managingFunds
@@ -37,7 +39,7 @@ items:
     steps:
       - index: 1
         name: Tabular Actions
-        image: /img/loan-boss/fund-tab-actions.gif
+        image: /img/loan-boss/fund-tab-actions_v2.gif
         description:
 
       - index: 2
@@ -49,3 +51,19 @@ items:
     modal: takeNotes
     description: Applicable pages were equipped with easily accessible buttons to add and read notes and attachments.
     image: /img/loan-boss/notes-and-attachments.gif
+
+  - title: Setting Alerts
+    modal: setAlerts
+    description: When managing a portfolio, it's imperative to know of important changes to your properties in as real-time as possible. So, we designed a way of managing event-driven alerts and time-sensitive reminders in the application.
+    image: /img/loan-boss/alerts/alerts-list.png
+    steps:
+      - index: 1
+        name: Notifications
+        image: /img/loan-boss/alerts/notifications.png
+        description:
+
+      - index: 2
+        name: Adding & Editing Alerts
+        image: /img/loan-boss/alerts/edit-alert.png
+        description:
+        
