@@ -1,0 +1,16 @@
+animations:
+
+  - type: gif
+    file: /img/davita-animation.gif
+    name: Digital Collage
+    desc: I was challenged to create an animation for an associate that would showcase her personality and that could be posted to popular social media platforms. This became my very first animation, created using After Effects and Illustrator. I was very pleased with the result.
+
+  - type: video
+    file: /img/animations/angular-face.mp4
+    name: Bare Bones
+    desc: With my interest piqued, I began looking into other means of creating animation. Creating one from a more code-driven standpoint was really interesting to me, so I created this very simple image and animated it using only SVG and CSS.
+
+  - type: video
+    file: /img/animations/ks-sdaas.mp4
+    name: Practical Application
+    desc: After playing around with animation on my own, I got an opportunity to bring what I'd learned into my day-to-day job. I ended up using a JavaScript-based language for this animation that was added to the company website to explain our structured service. Images were created by me in Illustrator.

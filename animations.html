@@ -17,15 +17,20 @@ ks_id: kba
     </div>
   </div>
   <div class="row">
-    {% for image in site.data.bac.images %}
-    <div class="col-md-4 my-2">
-      <div class="position-relative w-100">
-        <img class="img-thumbnail gallery-image w-100" src="{{ image.url }}" alt="{{ image.desc }}">
-        <div class="image-overlay h-100 w-100 d-flex align-items-center px-3">
-          <h6 class="text-center w-100">{{ image.desc }}</h6>
-        </div>
-      </div>
+    {% for animation in site.data.animations.animations %}
 
+    <div class="row py-3 border-bottom">
+      <div class="col-md-6">
+        {% if animation.type == "video" %}
+        <video width="100%" height="auto" controls><source src="{{ animation.file }}" type="video/mp4"></video>
+        {% else %}
+        <img class="img-fluid folio-image" src="{{ animation.file }}" alt="">
+        {% endif %}
+      </div>
+      <div class="col-md-6 pt-3 pt-md-0">
+        <h6 class="text-center">{{ animation.name }}</h6>
+        <p class="lead">{{ animation.desc }}</p>
+      </div>
     </div>
     {% endfor %}
 
