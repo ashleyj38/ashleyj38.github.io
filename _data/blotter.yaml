@@ -42,7 +42,7 @@ items:
     steps:
       - index: 1
         name: Original Screen
-        image: /img/blotter-new.png
+        image: /img/original-blotter.png
         description: The trade blotter, one of the most important pages of this application, had become a mutant monster over the course of this project. Tasked with loading in hundreds of thousands of records each day, not only were there performance issues that needed to be addressed, but issues with viewing the data as well. Several filters of different types had been concatenated onto this page over time, cramming the space and causing extra time to *digest the data being presented. And items that originally had been put in place to better inform the reading of this page, like the legend, were being abused and taking up unnecessary space as well.
 
       - index: 2
@@ -77,7 +77,7 @@ items:
     steps:
       - index: 1
         name: Original Job Runner Screen
-        image: /img/style-guide.png
+        image:
         description: The original screen was made up of a series of tiles with each of the available jobs listed. There were no explanations of each and no convention for finding which job you wanted to run. You would just have to read through the titles of each tile and guess as to what needed to be done.
 
       - index: 2
