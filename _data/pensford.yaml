@@ -30,7 +30,13 @@ items:
         image: /img/loan-boss/combine-modal-step1.png
         description:
       - index: 2
-        name:
+        name: Side-by-Side Comparison
+        image: /img/loan-boss/quote-combine-page.png
+        description:
+      - index: 3 
+        name: Deeper Analysis
+        image: /img/loan-boss/quote-combine-analysis.png
+        description: For further analysis of the deal, there was an analysis section which allowed users to input environmental data. These inputs then affected other calculated outputs to help solidify decision-making on a deal or deal(s).
 
   - title: Managing Funds
     modal: managingFunds
@@ -40,12 +46,12 @@ items:
       - index: 1
         name: Tabular Actions
         image: /img/loan-boss/fund-tab-actions_v2.gif
-        description:
+        description: A "kebab" menu was suggested on the active fund tab, with actions specifically related to that fund. This allowed the user to focus and make quick changes based on the current data set.
 
       - index: 2
-        name: Tabular Actions
+        name: Portfolio-Level Actions
         image: /img/loan-boss/funds-actions.gif
-        description:
+        description: A "meatball" menu was suggested for actions related to the entire portfolio of funds. This was placed in view at the end of the list of visible funds for easy access.
 
   - title: Take Notes
     modal: takeNotes
@@ -55,15 +61,15 @@ items:
   - title: Setting Alerts
     modal: setAlerts
     description: When managing a portfolio, it's imperative to know of important changes to your properties in as real-time as possible. So, we designed a way of managing event-driven alerts and time-sensitive reminders in the application.
-    image: /img/loan-boss/alerts/alerts-list.png
+    image: /img/loan-boss/Alerts/alerts-list.png
     steps:
       - index: 1
         name: Notifications
-        image: /img/loan-boss/alerts/notifications.png
+        image: /img/loan-boss/Alerts/notifications.png
         description:
 
       - index: 2
         name: Adding & Editing Alerts
-        image: /img/loan-boss/alerts/edit-alert.png
+        image: /img/loan-boss/Alerts/edit-alert.png
         description:
         
